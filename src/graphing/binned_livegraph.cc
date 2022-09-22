@@ -16,7 +16,7 @@ BinnedLiveGraph::BinnedLiveGraph( const string & name,
                                   const bool rate_quantity,
                                   const unsigned int bin_width_ms,
                                   const function<void(int,int&)> initialize_new_bin )
-    : graph_( 640, 480, name, 0, 1, styles, "time (s)", y_label ),
+    : graph_( 1280, 960, name, 0, 1, styles, "time (s)", y_label ),
       bin_width_ms_( bin_width_ms ),
       value_this_bin_( styles.size() ),
       current_bin_( timestamp() / bin_width_ms_ ),

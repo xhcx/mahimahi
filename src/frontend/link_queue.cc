@@ -90,7 +90,7 @@ LinkQueue::LinkQueue( const string & link_name, const string & filename, const s
                                                       "throughput (Mbps)",
                                                       8.0 / 1000000.0,
                                                       true,
-                                                      500,
+                                                      1000,
                                                       [] ( int, int & x ) { x = 0; } ) );
     }
 

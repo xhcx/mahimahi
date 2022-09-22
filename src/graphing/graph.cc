@@ -86,9 +86,9 @@ bool Graph::blocking_draw( const float t, const float logical_width,
 
   /* look at historical data points */
   for ( unsigned int i = 0; i < data_points_snapshot.size(); i++ ) {
-    if ( get<4>( styles_.at( i ) ) ) { /* skip filled areas */
-      continue;
-    }
+    // if ( get<4>( styles_.at( i ) ) ) { /* skip filled areas */
+    //   continue;
+    // }
     for ( const auto & point : data_points_snapshot.at( i ) ) {
       if ( point.second > max_value ) {
 	max_value = point.second;
